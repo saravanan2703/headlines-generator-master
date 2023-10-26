@@ -1,0 +1,526 @@
+@import 'index.css';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background-color: #F5F5F5;;
+}
+
+a {
+  color: #000;
+}
+/* Forms Design */
+.main {
+  max-width: 1068px;
+  margin: auto;
+}
+.search-box {
+  display: block;
+	margin: auto;
+  background-color: white;
+  padding: 60px 268px 104px;
+  border: 1px solid #000000;
+}
+.results {
+  padding: 60px 100px 109px;
+
+}
+.results .results-items:first-child a ,.results .results-items:first-child span{
+  display: none !important;
+}
+.results .results-items  {
+position: relative;
+}
+.results .results-items span.active-class, .favourite-heading span.active-class {
+  padding-left:25px;
+  background:url(./pages/red-heart-icon.svg) no-repeat top left;
+  display: inline-block;
+  height: 25px;
+  cursor: pointer;
+}
+.results .results-items span.inactive-class {
+  padding-left:25px;
+  background:url(./pages/heart.svg) no-repeat top left;
+  display: inline-block;
+  height: 25px;
+  cursor: pointer;
+}
+.home-page {
+  display: block;
+	margin: auto;
+  background-color: white;
+  border: 1px solid #000000;
+
+}
+.home-page > .content {
+  padding: 10px 166px 50px;
+}
+
+.search-box > h2 , .home-page > h2{
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+@media (min-width: 992px) {
+  .search-box h1 {
+    white-space: nowrap;
+    margin: 0 0 4rem 0;
+  }
+  .home-page h1 {
+    margin-bottom: 62px;
+  }
+}
+.hint-text {
+  font-family: 'Futura', 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #979797;
+  margin-bottom: 32px;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  color: #6c6c6c;
+  border-radius: 4px;
+  border: 1px solid #6c6c6c;
+  transition: all .4s;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  margin: 0;
+  opacity: 0;
+}
+
+.custom-checkbox {
+  /*color: #6c6c6c;*/
+  padding: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  flex: 1 1 20%;
+  text-align: center;
+  background-color: #ECE9E4;
+}
+.headline-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Submit-Button {
+  text-align: center;
+  margin-top: 10px;
+  width: 570px;
+  margin: auto;
+  
+}
+.Submit-Button  > button {
+  width: 100%;
+  padding: 12px;
+  background-color: #FF0000;
+  color: white;
+  border: 1px solid #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+form .Submit-Button {
+  padding-top: 2rem;
+}
+.toggle-text {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.additional-params {
+  padding-top: 1rem;
+}
+
+
+h1 {
+  font-family: 'Futura';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.results > h3 {
+  line-height: 48px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.results > h1 {
+  margin-bottom: 20px;
+}
+.results-items a {
+display: none;
+}
+
+img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.home-subtxt {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.home-subtxt > span {
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  text-align: justify;
+  padding-right: 25px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  .home-subtxt > span { 
+    width: 345px;
+  }
+}
+@media (min-width: 768px) {
+  .home-subtxt > span { 
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .home-subtxt > span { 
+    width: 250px;
+  }
+}
+
+.active {
+  background-color: #FF0000 ;
+  color: white ;
+}
+
+.home-page  .Submit-Button {
+  width: 360px;
+  padding-top: 60px;
+}
+.brand-voice {
+  margin-bottom: 10px;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+.headline-logo {
+  border: 1px solid #000000;
+  margin: 35px 0;
+  background-color: #fff;
+}
+.headline-logo img {
+  display: block;
+  width: 421px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.footer-container {
+  font-family: 'Futura', 'Helvetica';
+  font-size: 16px;
+  line-height: 32px;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/************* Result page if the content is not available ****************/
+.not-available {
+  text-align: center;
+  color: #979797;
+}
+
+
+/***** Tab Design Page ******/
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .search-box {
+    padding: 60px 104px 104px;
+  }
+  .footer-container {
+    padding: 0 20px;
+  }  
+}
+
+
+
+/*************** Mobile Design ***********************/
+@media (max-width: 767px) {
+  .main {
+    margin: 0 20px
+  }
+  .headline-logo > img {
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    color: #000000;
+  }
+  .home-subtxt {
+    display: block;
+  }
+  .home-subtxt > span {
+    display: inline-block;
+    padding-bottom: 27px;
+    padding-right: 0;
+  }
+
+  .home-page > .content {
+    padding: 10px 35px;
+  }
+
+  .home-page .Submit-Button {
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .Submit-Button {
+    width: 100%;
+  }
+
+  .search-box {
+    padding: 0 25px 70px;
+  }
+  .search-input {
+    width: 95%;
+  }
+  .custom-checkbox {
+    white-space: nowrap;
+    padding:22px;
+  }
+  .hint-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .results > h3 {
+    line-height: 30px;
+  }
+
+  .footer-container {
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    line-height: 22px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .footer-container > p {
+    font-size: 16px;
+    margin-bottom: 42px;
+  }
+}
+
+
+/*************** Login And Signup Design ***********************/
+
+.signup-link , .signin-link {
+  cursor: pointer;
+  color: #FF0000;
+}
+.login-form , .signup-form {
+  max-width: 1068px;
+  margin: auto;
+  text-align: center;
+}
+.login-form .email, .signup-form .email ,.login-form .password, .signup-form .password{
+  width: 50%;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  color: #6c6c6c;
+  border-radius: 4px;
+  border: 1px solid #6c6c6c;
+}
+.email-field , .password-field {
+  margin-bottom: 25px;
+}
+.email-field label {
+  padding-right: 42px;
+}
+.password-field label {
+  padding-right: 16px;
+}
+
+
+.login-form button, .signup-form button {
+  padding: 12px;
+  background-color: #FF0000;
+  color: white;
+  border: 1px solid #FF0000;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.login-values, .signup-values {
+  border: 1px solid;
+  background-color: white;
+  padding: 60px 100px 109px
+}
+
+.error-message, .error {
+  color: red;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .login-form , .signup-form {
+    max-width: 768px;
+    padding: 0 20px;
+  }
+  .login-form .email, .signup-form .email ,.login-form .password, .signup-form .password{
+    width: auto;
+  }
+  .login-values, .signup-values {
+    padding: 0;
+  }
+}
+
+
+.signout {
+  text-align: end;
+  margin-bottom: 20px;
+}
+.signout a {
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+  .favourites {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .favourites-list {
+    margin-right: 10px;
+  }
+  .favourite-heading h2 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  .favourites-items {
+    display: flex;
+    justify-content: space-between;
+  }
+  .favourites a {
+    cursor: pointer;
+    color: #FF0000;
+  }
+}
+
+
+
+/**** Payment Success **/
+.checkmark {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #4bb71b;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #4bb71b;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  position:relative;
+  top: 5px;
+  right: 5px;
+  margin: 0 auto;
+}
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #4bb71b;
+  fill: #fff;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
